@@ -1,0 +1,122 @@
+:root {
+	font-family: 'Inter', sans-serif;
+}
+s @supports (font-variation-settings: normal) {
+	:root {
+		font-family: 'Inter var', sans-serif;
+	}
+}
+
+body {
+	margin: 20px 15% 20px 15%;
+	font-family: Inter;
+	font-weight: Thin;
+	background-color: #e3e4e7;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.orgName {
+	margin-top: 30px;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #e3e4e7;
+	align-items: center;
+	height: 100%;
+}
+
+.topnav a {
+	float: right;
+	color: #5c5353;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+
+.topnav a.active {
+	background-color: #ea6c48;
+	color: white;
+}
+
+.nonHeader {
+	margin-top: 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#subHeading {
+	font-weight: 600;
+}
+
+.cta-button {
+	background-color: #ea6c48;
+	color: #fff;
+	font-size: 14px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 20px;
+
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+	background-color: #e94c4f;
+}
+
+.cta-button:active {
+	transform: translateY(1px);
+}
+
+.text {
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	padding-top: 5%;
+}
+
+.img {
+	grid-column-start: 2;
+	grid-column-end: span 3;
+}
+
+.footer {
+	width: 60%;
+	margin-top: 2%;
+	margin-bottom: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#footerTitle {
+	font-weight: 600;
+	color: black;
+}
+
+.item1 {
+	grid-column-start: 1;
+	font-weight: 300;
+	color: grey;
+}
+
+.item2 {
+	grid-column-start: 2;
+	justify-self: end;
+	font-weight: 300;
+	color: grey;
+}
